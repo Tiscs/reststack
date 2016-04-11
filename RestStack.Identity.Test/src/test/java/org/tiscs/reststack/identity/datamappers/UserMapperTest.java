@@ -10,6 +10,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.tiscs.reststack.core.contexts.AppContext;
 import org.tiscs.reststack.core.contexts.DbContext;
 import org.tiscs.reststack.core.contexts.WebContext;
+import org.tiscs.reststack.identity.controllers.UserController;
 
 import static org.junit.Assert.*;
 
@@ -19,15 +20,18 @@ import static org.junit.Assert.*;
 public class UserMapperTest {
     @Autowired
     private ApplicationContext applicationContext;
+    @Autowired
+    private UserController userController;
     private UserMapper userMapper;
 
     @Before
     public void setUp() throws Exception {
-        this.userMapper = applicationContext.getBean(UserMapper.class);
+         this.userMapper = applicationContext.getBean(UserMapper.class);
     }
 
     @org.junit.Test
     public void findAll() throws Exception {
+        assertNotNull(userController);
         assertNotNull(userMapper);
     }
 }

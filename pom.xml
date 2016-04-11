@@ -9,6 +9,7 @@
         <module>RestStack.Identity</module>
         <module>RestStack.Identity.Core</module>
         <module>RestStack.Identity.Impl</module>
+        <module>RestStack.Identity.Test</module>
     </modules>
     <groupId>org.tiscs</groupId>
     <artifactId>reststack</artifactId>
