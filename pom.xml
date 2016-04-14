@@ -21,12 +21,12 @@
         <mavenwarplugin-version>2.6</mavenwarplugin-version>
         <junit-version>4.12</junit-version>
         <servlet-version>3.1.0</servlet-version>
-        <jetty-version>9.3.7.v20160115</jetty-version>
+        <jetty-version>9.3.8.v20160314</jetty-version>
         <spring-version>4.2.5.RELEASE</spring-version>
-        <jodatime-version>2.9.2</jodatime-version>
+        <jodatime-version>2.9.3</jodatime-version>
         <mybatis-version>3.3.1</mybatis-version>
-        <mybatisspring-version>1.2.3</mybatisspring-version>
-        <jackson-version>2.6.5</jackson-version> <!--Support for Jackson 2.7 will be added in Spring 4.3.  https://jira.spring.io/browse/SPR-13483-->
+        <mybatisspring-version>1.2.5</mybatisspring-version>
+        <jackson-version>2.6.6</jackson-version> <!--Support for Jackson 2.7 will be added in Spring 4.3.  https://jira.spring.io/browse/SPR-13483-->
         <dbcp2-version>2.1.1</dbcp2-version>
         <postgresql-version>9.4.1208.jre7</postgresql-version>
     </properties>
