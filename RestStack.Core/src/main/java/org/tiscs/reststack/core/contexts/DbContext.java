@@ -14,8 +14,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("org.tiscs.reststack.*.datamappers")
-@MapperScan("org.tiscs.reststack.*.datamappers")
+@ComponentScan("org.tiscs.reststack.*.models.mappers")
+@MapperScan("org.tiscs.reststack.*.models.mappers")
 public class DbContext {
     @Bean(destroyMethod = "close")
     public BasicDataSource dataSource() {
@@ -39,7 +39,7 @@ public class DbContext {
         sessionFactoryBean.setTypeHandlersPackage("org.tiscs.reststack.core.handlers");
         sessionFactoryBean.setDataSource(dataSource());
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        sessionFactoryBean.setMapperLocations(resolver.getResources("classpath*:/org/tiscs/reststack/*/datamappers/*.pgsql.xml"));
+        sessionFactoryBean.setMapperLocations(resolver.getResources("classpath*:/org/tiscs/reststack/*/models/mappers/*.pgsql.xml"));
         return sessionFactoryBean.getObject();
     }
 }

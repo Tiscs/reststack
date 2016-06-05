@@ -4,9 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.tiscs.reststack.core.annotations.RequestQuery;
 import org.tiscs.reststack.core.generic.DataQuery;
-import org.tiscs.reststack.identity.datamappers.UserMapper;
-import org.tiscs.reststack.identity.datamodels.User;
-import org.tiscs.reststack.identity.dataservices.UserService;
+import org.tiscs.reststack.identity.models.mappers.UserMapper;
+import org.tiscs.reststack.identity.models.User;
+import org.tiscs.reststack.identity.services.UserService;
 
 import java.util.List;
 

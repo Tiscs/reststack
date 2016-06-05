@@ -1,4 +1,4 @@
-package org.tiscs.reststack.identity.datamodels;
+package org.tiscs.reststack.identity.models;
 
 import org.joda.time.DateTime;
 

@@ -11,6 +11,8 @@ CREATE TABLE "identity"."Users" (
   "activated" bool NOT NULL,
   "name" varchar(128) COLLATE "default" NOT NULL,
   "gender" varchar(128) COLLATE "default" NOT NULL,
+  "email" varchar(64) COLLATE "default" NOT NULL,
+  "emailVerified" bool NOT NULL,
   "phoneNumber" varchar(64) COLLATE "default" NOT NULL,
   "phoneNumberVerified" bool NOT NULL
 ) WITH (OIDS=FALSE);

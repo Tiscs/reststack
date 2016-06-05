@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.*;
 import org.tiscs.reststack.core.annotations.ApiDoc;
 import org.tiscs.reststack.core.annotations.RequestQuery;
 import org.tiscs.reststack.core.annotations.RequiresPermissions;
-import org.tiscs.reststack.core.datamodels.ActionDoc;
-import org.tiscs.reststack.core.datamodels.ParamDoc;
-import org.tiscs.reststack.core.datamodels.ServiceDoc;
+import org.tiscs.reststack.core.models.ActionDoc;
+import org.tiscs.reststack.core.models.ParamDoc;
+import org.tiscs.reststack.core.models.ServiceDoc;
 import org.tiscs.reststack.core.services.ApiDocService;
 
 import java.lang.reflect.Method;

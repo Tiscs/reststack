@@ -1,4 +1,4 @@
-package org.tiscs.reststack.identity.dataservices;
+package org.tiscs.reststack.identity.services;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -6,7 +6,7 @@ import org.tiscs.reststack.core.annotations.ApiDoc;
 import org.tiscs.reststack.core.annotations.RequestQuery;
 import org.tiscs.reststack.core.annotations.RequiresPermissions;
 import org.tiscs.reststack.core.generic.DataQuery;
-import org.tiscs.reststack.identity.datamodels.User;
+import org.tiscs.reststack.identity.models.User;
 
 import java.util.List;
 

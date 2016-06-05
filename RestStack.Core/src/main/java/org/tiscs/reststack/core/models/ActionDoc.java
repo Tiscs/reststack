@@ -1,4 +1,4 @@
-package org.tiscs.reststack.core.datamodels;
+package org.tiscs.reststack.core.models;
 
 import org.springframework.web.bind.annotation.RequestMethod;
 

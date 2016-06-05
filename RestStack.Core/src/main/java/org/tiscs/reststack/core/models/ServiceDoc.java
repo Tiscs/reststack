@@ -1,4 +1,4 @@
-package org.tiscs.reststack.core.datamodels;
+package org.tiscs.reststack.core.models;
 
 /**
  * 接口服务文档描述信息。

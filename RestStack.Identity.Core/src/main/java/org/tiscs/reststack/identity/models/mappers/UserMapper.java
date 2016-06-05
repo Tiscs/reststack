@@ -1,7 +1,7 @@
-package org.tiscs.reststack.identity.datamappers;
+package org.tiscs.reststack.identity.models.mappers;
 
 import org.springframework.stereotype.Repository;
-import org.tiscs.reststack.identity.datamodels.User;
+import org.tiscs.reststack.identity.models.User;
 
 import java.util.List;
 

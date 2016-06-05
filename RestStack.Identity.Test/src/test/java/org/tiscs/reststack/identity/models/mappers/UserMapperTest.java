@@ -1,4 +1,4 @@
-package org.tiscs.reststack.identity.datamappers;
+package org.tiscs.reststack.identity.models.mappers;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -20,13 +20,13 @@ import static org.junit.Assert.*;
 public class UserMapperTest {
     @Autowired
     private ApplicationContext applicationContext;
-    @Autowired
     private UserController userController;
     private UserMapper userMapper;
 
     @Before
     public void setUp() throws Exception {
-         this.userMapper = applicationContext.getBean(UserMapper.class);
+        this.userController = applicationContext.getBean(UserController.class);
+        this.userMapper = applicationContext.getBean(UserMapper.class);
     }
 
     @org.junit.Test

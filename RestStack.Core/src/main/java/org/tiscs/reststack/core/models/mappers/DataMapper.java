@@ -1,4 +1,4 @@
-package org.tiscs.reststack.core.datamappers;
+package org.tiscs.reststack.core.models.mappers;
 
 import org.tiscs.reststack.core.generic.DataQuery;
 

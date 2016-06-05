@@ -1,4 +1,4 @@
-package org.tiscs.reststack.identity.datamodels;
+package org.tiscs.reststack.identity.models;
 
 public enum Gender {
     SECRET,

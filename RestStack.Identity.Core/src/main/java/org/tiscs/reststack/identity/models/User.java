@@ -1,4 +1,4 @@
-package org.tiscs.reststack.identity.datamodels;
+package org.tiscs.reststack.identity.models;
 
 import org.joda.time.DateTime;
 
@@ -12,6 +12,8 @@ public class User {
     private boolean activated;
     private String name;
     private Gender gender;
+    private String email;
+    private String meailVerified;
     private String phoneNumber;
     private boolean phoneNumberVerified;
 
@@ -69,6 +71,22 @@ public class User {
 
     public void setGender(Gender gender) {
         this.gender = gender;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMeailVerified() {
+        return meailVerified;
+    }
+
+    public void setMeailVerified(String meailVerified) {
+        this.meailVerified = meailVerified;
     }
 
     public String getPhoneNumber() {
