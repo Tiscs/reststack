@@ -13,7 +13,7 @@ public class User {
     private String name;
     private Gender gender;
     private String email;
-    private String meailVerified;
+    private boolean emailVerified;
     private String phoneNumber;
     private boolean phoneNumberVerified;
 
@@ -81,12 +81,12 @@ public class User {
         this.email = email;
     }
 
-    public String getMeailVerified() {
-        return meailVerified;
+    public boolean isEmailVerified() {
+        return emailVerified;
     }
 
-    public void setMeailVerified(String meailVerified) {
-        this.meailVerified = meailVerified;
+    public void setEmailVerified(boolean emailVerified) {
+        this.emailVerified = emailVerified;
     }
 
     public String getPhoneNumber() {

@@ -1,5 +1,6 @@
 package org.tiscs.reststack.core;
 
+import ch.qos.logback.ext.spring.web.LogbackConfigListener;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -11,6 +12,8 @@ import org.tiscs.reststack.core.contexts.WebContext;
 
 public class AppEntry {
     public static void main(String[] args) throws Exception {
+        org.apache.ibatis.logging.LogFactory.useSlf4jLogging();
+
         Server server = new Server(8080);
 
         ServletContextHandler servletContext = new ServletContextHandler(ServletContextHandler.SESSIONS);
@@ -19,6 +22,7 @@ public class AppEntry {
         AnnotationConfigWebApplicationContext appContext = new AnnotationConfigWebApplicationContext();
         appContext.register(AppContext.class);
         servletContext.addEventListener(new ContextLoaderListener(appContext));
+        servletContext.addEventListener(new LogbackConfigListener());
 
         AnnotationConfigWebApplicationContext webContext = new AnnotationConfigWebApplicationContext();
         webContext.register(WebContext.class);

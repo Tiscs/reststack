@@ -1,4 +1,4 @@
-package org.tiscs.reststack.core.handlers;
+package org.tiscs.reststack.core.postgres;
 
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;

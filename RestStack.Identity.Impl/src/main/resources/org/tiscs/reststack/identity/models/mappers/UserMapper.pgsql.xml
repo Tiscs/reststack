@@ -2,16 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.tiscs.reststack.identity.models.mappers.UserMapper">
     <select id="findAll" resultType="org.tiscs.reststack.identity.models.User">
-        select
-            "id",
-            "createTime",
-            "lastModified",
-            "deleted",
-            "activated",
-            "name",
-            "gender",
-            "phoneNumber",
-            "phoneNumberVerified"
-        from "Users"
+        SELECT
+            "id"                    AS "id",
+            "create_time"           AS "createTime",
+            "last_modified"         AS "lastModified",
+            "deleted"               AS "deleted",
+            "activated"             AS "activated",
+            "name"                  AS "name",
+            "gender"                AS "gender",
+            "email"                 AS "email",
+            "email_verified"        AS "emailVerified",
+            "phone_number"          AS "phoneNumber",
+            "phone_number_verified" AS "phoneNumberVerified"
+        FROM "users"
     </select>
 </mapper>
