@@ -37,6 +37,7 @@ public class DbContext {
         SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
         // https://github.com/manniwood/mmpt 2.1
         sessionFactoryBean.setTypeHandlersPackage("org.tiscs.reststack.core.postgres");
+        sessionFactoryBean.setTypeAliasesPackage("org.tiscs.reststack.core.postgres");
         sessionFactoryBean.setDataSource(dataSource());
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         sessionFactoryBean.setMapperLocations(resolver.getResources("classpath*:/org/tiscs/reststack/*/models/mappers/*.pgsql.xml"));

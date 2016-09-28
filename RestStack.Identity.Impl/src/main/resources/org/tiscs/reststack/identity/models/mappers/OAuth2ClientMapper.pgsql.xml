@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.tiscs.reststack.identity.models.mappers.OAuth2ClientMapper">
+    <select id="findOneById" resultType="org.tiscs.reststack.identity.models.OAuth2Client">
+        SELECT
+            "id"            AS "id",
+            "create_time"   AS "createTime",
+            "last_modified" AS "lastModified",
+            "disabled"      AS "disabled",
+            "name"          AS "accessToken"
+        FROM "oauth2_clients"
+        WHERE "id" = #{id,javaType=java.util.UUID,jdbcType=OTHER,typeHandler=UUIDTypeHandler}
+    </select>
+</mapper>

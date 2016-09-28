@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.tiscs.reststack.identity.models.mappers.OAuth2RequestMapper">
+    <select id="findOneByCode" resultType="org.tiscs.reststack.identity.models.OAuth2Request">
+        SELECT
+            "client_id"    AS "clientId",
+            "user_id"      AS "userId",
+            "create_time"  AS "createTime",
+            "expires_in"   AS "expiresIn",
+            "redirect_uri" AS "redirectUri",
+            "scope"        AS "scope",
+            "code"         AS "code"
+        FROM "oauth2_requests"
+        WHERE "code" = #{code,jdbcType=VARCHAR}
+    </select>
+</mapper>
