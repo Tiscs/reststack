@@ -1,6 +1,7 @@
 package org.tiscs.reststack.core;
 
 import ch.qos.logback.ext.spring.web.LogbackConfigListener;
+import ch.qos.logback.ext.spring.web.WebLogbackConfigurer;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -21,6 +22,7 @@ public class AppEntry {
 
         AnnotationConfigWebApplicationContext appContext = new AnnotationConfigWebApplicationContext();
         appContext.register(AppContext.class);
+        servletContext.setInitParameter(WebLogbackConfigurer.EXPOSE_WEB_APP_ROOT_PARAM, "false");
         servletContext.addEventListener(new ContextLoaderListener(appContext));
         servletContext.addEventListener(new LogbackConfigListener());
 

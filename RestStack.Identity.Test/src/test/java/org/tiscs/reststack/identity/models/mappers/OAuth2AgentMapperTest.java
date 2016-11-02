@@ -7,18 +7,12 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
-import org.tiscs.reststack.core.contexts.AppContext;
 import org.tiscs.reststack.core.contexts.DbContext;
 import org.tiscs.reststack.core.contexts.WebContext;
-import org.tiscs.reststack.identity.models.OAuth2Agent;
-
-import java.sql.JDBCType;
-
-import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration(classes = {AppContext.class, DbContext.class, WebContext.class})
+@ContextConfiguration(classes = {DbContext.class, WebContext.class})
 public class OAuth2AgentMapperTest {
     @Autowired
     private ApplicationContext applicationContext;
