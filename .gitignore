@@ -1,4 +1,7 @@
-/.idea
 *.iml
+/.project
+/.idea
+/.settings/
+/RestStack.*/.*
 /RestStack.*/logs/
 /RestStack.*/target/
