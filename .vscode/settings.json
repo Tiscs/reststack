@@ -1,0 +1,15 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        ".idea": true,
+        "*/.classpath": true,
+        "**/.project": true,
+        "*/target": true,
+        "**/*.iml": true,
+        "**/.settings": true
+    }
+}
